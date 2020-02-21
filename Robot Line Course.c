@@ -26,8 +26,6 @@ void setup(){
   servoL.attach(13);
   servoR.attach(12);
 
-  int pins = 1; //doesn't do anything
-
 //straddle circle
   for(int i = 0; i < 155; i++){
     lineTracking();
