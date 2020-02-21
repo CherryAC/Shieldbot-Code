@@ -1,4 +1,7 @@
-// The robot has to follow a course by following black tape lines
+/* The robot has to follow a course by following black tape lines.
+the Serial Monitor shows the outputs of the four sensors on the bottom of the robot.
+The sensor outputs determine what movements the robot does (see void lineTracking)
+*/
 
 /*
 
