@@ -1,4 +1,8 @@
 /* The robot has to follow a course by following black tape lines.
+   It starts by doing the semicircle
+      then it traces the black rectangle
+          finally it follows the white spaces until it touches the black box at top right corner of the table
+
 the Serial Monitor shows the outputs of the four sensors on the bottom of the robot.
 The sensor outputs determine what movements the robot does (see void lineTracking)
 */
@@ -59,67 +63,67 @@ void setup(){
     lineTracking();
   }
 
-  //back up to avoid wall --do not change
+  //back up to avoid wall 
   servoL.writeMicroseconds(1300);
   servoR.writeMicroseconds(1700);
   delay(900);
 
-  //turn off of rectangle --do not change
+  //turn off of rectangle 
   servoL.writeMicroseconds(1500); 
   servoR.writeMicroseconds(1700);
   delay(1500);
 
-  //move off rectangle --do not change
+  //move off rectangle
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1300);
   delay(1900);
 
-  //turn right --do not change
+  //turn right 
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1700);
   delay(900);
 
-  //move right --do not change
+  //move right
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1300);
   delay(2600);
 
-  //turn left -- do not change
+  //turn left
   servoL.writeMicroseconds(1500);
   servoR.writeMicroseconds(1300);
   delay(1500);
 
-  //move forward -- iffy
+  //move forward
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1300);
   delay(1050);
 
-  //turn left - perfect
+  //turn left 
   servoL.writeMicroseconds(1500);
   servoR.writeMicroseconds(1300);
   delay(1600);
 
-  //move forward -- good
+  //move forward 
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1300);
   delay(3100);
 
-  //turn right -- perfect
+  //turn right
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1500);
   delay(1700);
 
-  //move forward -- perfect
+  //move forward 
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1300);
   delay(1400);
 
-  //move right -- working on
+  //move right 
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1500);
   delay(1500);
 
-  //move forward --not tested
+  //move forward 
   servoL.writeMicroseconds(1700);
   servoR.writeMicroseconds(1300);
   delay(57 00);
